@@ -5,7 +5,7 @@ import './header.css'
 const Header = () => {
   return (
     <div className='header__div'>
-      <img className='img' src="https://www.creativefabrica.com/wp-content/uploads/2021/11/27/IS-logo-design-vector-Graphics-20820280-1-580x386.jpg" alt="" />
+      <img className='img' src="https://media1.thehungryjpeg.com/thumbs2/ori_3659063_3se1lci0rezmcq2d23js4j69gbiswkvrgnltiphk_monogram-is-logo-design.jpg" alt="" />
       <ul className='header__ul'>
         
         <li>
