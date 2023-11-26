@@ -1,10 +1,8 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './Card.css';
 
-const Card = ({ item }) => {
+const Card = ({ item,addToFavorites, }) => {
   return (
     <div className="card" style={{ width: '18rem' }}>
   <img
@@ -19,7 +17,9 @@ const Card = ({ item }) => {
       Details
     </Link>
     <br /><br />
-    <Link to={`/favorites/${item.id}`} className="btn btn-primary link" style={{ backgroundColor: 'navy' }}>
+    <Link  onClick={(e)=>{
+      addToFavorites(item.id)
+    }} className="btn btn-primary link" style={{ backgroundColor: 'navy' }}>
       Go Favorites
     </Link>
   </div>
